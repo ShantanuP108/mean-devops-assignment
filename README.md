@@ -99,7 +99,7 @@ Workflow file:  .github/workflows/cicd.yml
 ![Pipeline](screenshots/docker-pull.png)
 
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Shantanu
 
