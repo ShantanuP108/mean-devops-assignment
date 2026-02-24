@@ -1,17 +1,32 @@
-# MEAN DevOps Assignment
+# 🚀 MEAN DevOps Assignment
 
-## 🚀 Live Application
-Frontend: http://13.201.181.112:4200  
-Backend API: http://13.201.181.112:8080
+A production-ready MEAN stack application deployed using Docker, CI/CD, AWS EC2, and Nginx reverse proxy.
 
 ---
 
-## 📦 Tech Stack
+## 🌐 Live Application
+
+Frontend & Nginx Entry:
+http://13.200.207.82
+
+Frontend (direct container):
+http://13.200.207.82:4200
+
+Backend API:
+http://13.200.207.82:8080
+
+---
+
+## 🧰 Tech Stack
+
 - Angular (Frontend)
 - Node.js + Express (Backend)
 - MongoDB
 - Docker & Docker Compose
-- AWS EC2
+- GitHub Actions (CI/CD)
+- DockerHub (Image Registry)
+- AWS EC2 (Deployment)
+- Nginx (Reverse Proxy)
 
 ---
 
@@ -21,7 +36,15 @@ Backend API: http://13.201.181.112:8080
 git clone https://github.com/ShantanuP108/mean-devops-assignment.git
 cd mean-devops-assignment
 docker-compose up -d --build
-☁️ Deployment Steps
+```
+
+# Application will be available at:
+
+Frontend → http://localhost:4200
+
+Backend → http://localhost:8080
+
+## ☁️ Deployment Steps
 
 1. Launch EC2 (Ubuntu)
 
@@ -33,11 +56,50 @@ docker-compose up -d --build
 
 5. Open ports 22, 4200, 8080 in security group
 
+## 🔄 CI/CD Pipeline
 
-HEAD
-```
+GitHub Actions pipeline automatically:
 
-👨‍💻 Author
+✅ Builds frontend & backend Docker images
+✅ Pushes images to DockerHub
+✅ Enables production-ready container deployment
+
+Workflow file:  .github/workflows/cicd.yml
+
+## ScreenShots
+
+## UI
+![UI](screenshots/ui.png)
+
+## CI/CD Pipeline
+![Pipeline](screenshots/pipeline.png)
+
+## Containers
+![Pipeline](screenshots/containers.png)
+
+## nginx
+![Pipeline](screenshots/nginx.png)
+
+## Dockerhub
+![Pipeline](screenshots/dockerhub.png)
+
+## Dockerhub-frontend
+![Pipeline](screenshots/dockerhub-frontend.png)
+
+## Dockerhub-backend
+![Pipeline](screenshots/dockerhub-backend.png)
+
+## Nginx-config
+![Pipeline](screenshots/nginx-config.png)
+
+## Docker Images
+![Pipeline](screenshots/images.png)
+
+## Docker Pull
+![Pipeline](screenshots/docker-pull.png)
+
+
+##👨‍💻 Author
 
 Shantanu
 
